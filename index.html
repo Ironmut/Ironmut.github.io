@@ -1,13 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="utf-8">
-  <title>IronMut legal</title>
-  <style>body{font-family:Georgia,serif;max-width:40rem;margin:3rem auto;padding:0 1.25rem;background:#f4efe8;color:#1a120c}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IronMut</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&amp;family=IM+Fell+English+SC&amp;display=swap');
+
+    :root {
+      --bg: #0a0a0a;
+      --text: #c8b89a;
+      --accent: #8c6f47;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "IM Fell English SC", Georgia, serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      line-height: 1.4;
+    }
+
+    .container {
+      max-width: 620px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    .rune {
+      font-size: 3.2rem;
+      letter-spacing: 0.6rem;
+      color: var(--accent);
+      margin: 0.4rem 0 1.2rem;
+      font-family: "UnifrakturCook", serif;
+    }
+
+    h1 {
+      font-size: 3.8rem;
+      letter-spacing: 0.25rem;
+      margin: 0 0 0.3rem;
+      font-weight: 700;
+      color: #d4c4a3;
+    }
+
+    .bio {
+      font-size: 1.35rem;
+      margin: 1.6rem 0 2.2rem;
+      line-height: 1.5;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      opacity: 0.75;
+      margin-bottom: 2rem;
+      letter-spacing: 0.1rem;
+    }
+
+    .links {
+      margin-top: 2.5rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid #5c4730;
+      padding-bottom: 1px;
+    }
+
+    a:hover {
+      color: #d4c4a3;
+      border-color: #8c6f47;
+    }
+
+    .footer {
+      margin-top: 3.5rem;
+      font-size: 0.85rem;
+      opacity: 0.55;
+    }
+
+    .footer a {
+      border: none;
+      font-size: 0.85rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>IronMut</h1>
-  <p><a href="terms.html">Terms of Service</a></p>
-  <p><a href="privacy.html">Privacy Policy</a></p>
+  <div class="container">
+    <div class="rune">ᚱᚢᚾᛖᚾ</div>
+    <h1>IRONMUT</h1>
+
+    <p class="bio">ᚱᚢᚾᛖᚾ erwachen. Gegen das Silizium.</p>
+
+    <p class="subtitle">Viking-Country-Metal</p>
+
+    <div class="links">
+      <a href="https://www.tiktok.com/@ironmutmusic" target="_blank" rel="noopener">TikTok @ironmutmusic</a>
+    </div>
+
+    <div class="footer">
+      <a href="terms.html">Terms</a> &nbsp;·&nbsp; 
+      <a href="privacy.html">Privacy</a>
+    </div>
+  </div>
 </body>
 </html>
