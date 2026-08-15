@@ -3,108 +3,258 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IronMut</title>
+  <title>IronMut • Silizium-Runen</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&amp;family=IM+Fell+English+SC&amp;display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=IM+Fell+English+SC&display=swap');
 
     :root {
       --bg: #0a0a0a;
       --text: #c8b89a;
-      --accent: #8c6f47;
+      --accent: #b38b5e;
+      --steel: #3a3a3a;
     }
+
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
       background: var(--bg);
       color: var(--text);
       font-family: "IM Fell English SC", Georgia, serif;
+      line-height: 1.55;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      background: rgba(10,10,10,0.95);
+      border-bottom: 1px solid var(--steel);
+      padding: 1rem 2rem;
       display: flex;
       align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      line-height: 1.4;
+      justify-content: space-between;
+      z-index: 100;
     }
 
-    .container {
-      max-width: 620px;
-      padding: 2rem 1.5rem;
-      text-align: center;
-    }
-
-    .rune {
-      font-size: 3.2rem;
-      letter-spacing: 0.6rem;
-      color: var(--accent);
-      margin: 0.4rem 0 1.2rem;
+    .logo {
       font-family: "UnifrakturCook", serif;
+      font-size: 1.6rem;
+      letter-spacing: 0.15em;
+      color: var(--accent);
     }
 
-    h1 {
-      font-size: 3.8rem;
-      letter-spacing: 0.25rem;
+    .nav a {
+      color: var(--text);
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-size: 0.95rem;
+      opacity: 0.8;
+    }
+    .nav a:hover { opacity: 1; color: var(--accent); }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 4rem 2rem;
+      border-bottom: 1px solid var(--steel);
+    }
+
+    .hero-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      font-size: 4.2rem;
+      line-height: 0.9;
       margin: 0 0 0.3rem;
-      font-weight: 700;
+      letter-spacing: 0.05em;
       color: #d4c4a3;
+    }
+
+    .rune-title {
+      font-size: 1.1rem;
+      letter-spacing: 0.6em;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+      font-family: "UnifrakturCook", serif;
     }
 
     .bio {
       font-size: 1.35rem;
-      margin: 1.6rem 0 2.2rem;
-      line-height: 1.5;
+      max-width: 32ch;
+      margin: 1.5rem 0 2rem;
     }
 
-    .subtitle {
-      font-size: 1.05rem;
-      opacity: 0.75;
-      margin-bottom: 2rem;
-      letter-spacing: 0.1rem;
+    .hero img {
+      width: 100%;
+      max-width: 520px;
+      border: 1px solid var(--steel);
+      box-shadow: 0 0 0 8px #111;
     }
 
-    .links {
-      margin-top: 2.5rem;
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
     }
 
-    a {
+    h2 {
+      font-size: 1.1rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.8rem;
+      font-weight: normal;
+    }
+
+    .album-list {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 0.6rem 2rem;
+    }
+
+    .album-list li {
+      padding: 0.4rem 0;
+      border-bottom: 1px solid #222;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .album-list .num {
+      color: var(--accent);
+      font-family: monospace;
+      width: 1.8em;
+      flex-shrink: 0;
+    }
+
+    .visuals {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .visuals img {
+      width: 100%;
+      border: 1px solid var(--steel);
+      display: block;
+    }
+
+    .connect {
+      text-align: center;
+      padding: 3rem 2rem;
+      border-top: 1px solid var(--steel);
+    }
+
+    .tiktok {
+      display: inline-block;
+      font-size: 1.1rem;
+      padding: 0.8rem 2.2rem;
+      border: 1px solid var(--accent);
       color: var(--accent);
       text-decoration: none;
-      border-bottom: 1px solid #5c4730;
-      padding-bottom: 1px;
+      letter-spacing: 0.1em;
+      margin: 1rem 0;
     }
-
-    a:hover {
-      color: #d4c4a3;
-      border-color: #8c6f47;
+    .tiktok:hover {
+      background: var(--accent);
+      color: #0a0a0a;
     }
 
     .footer {
-      margin-top: 3.5rem;
-      font-size: 0.85rem;
-      opacity: 0.55;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      opacity: 0.5;
+      border-top: 1px solid #222;
     }
-
     .footer a {
-      border: none;
-      font-size: 0.85rem;
+      color: inherit;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="rune">ᚱᚢᚾᛖᚾ</div>
-    <h1>IRONMUT</h1>
 
-    <p class="bio">ᚱᚢᚾᛖᚾ erwachen. Gegen das Silizium.</p>
+  <header class="header">
+    <div class="logo">IRONMUT</div>
+    <nav class="nav">
+      <a href="#album">Album</a>
+      <a href="#visuals">Visuals</a>
+      <a href="https://www.tiktok.com/@ironmutmusic" target="_blank">TikTok</a>
+    </nav>
+  </header>
 
-    <p class="subtitle">Viking-Country-Metal</p>
-
-    <div class="links">
-      <a href="https://www.tiktok.com/@ironmutmusic" target="_blank" rel="noopener">TikTok @ironmutmusic</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="rune-title">ᚱᚢᚾᛖᚾ</div>
+        <h1>SILIZIUM<br>RUNEN</h1>
+        <p class="bio">ᚱᚢᚾᛖᚾ erwachen.<br>Gegen das Silizium.</p>
+        <p style="opacity:0.6; font-size:0.95rem;">Viking-Country-Metal</p>
+      </div>
+      <div>
+        <img src="images/ironmut-portrait.png" alt="IronMut" style="max-height: 520px; object-fit: cover;">
+      </div>
     </div>
+  </section>
 
-    <div class="footer">
-      <a href="terms.html">Terms</a> &nbsp;·&nbsp; 
-      <a href="privacy.html">Privacy</a>
+  <!-- ÜBER -->
+  <section>
+    <h2>Das Projekt</h2>
+    <p style="max-width: 620px; font-size: 1.05rem;">
+      IronMut ist der Klang des Widerstands. Alte Runen gegen flüssiges Chrom. 
+      Stahl und Code. Ein Krieg, der in den schweigenden Hallen der Maschinen geführt wird.
+    </p>
+  </section>
+
+  <!-- ALBUM -->
+  <section id="album">
+    <h2>Silizium-Runen</h2>
+    <ul class="album-list">
+      <li><span class="num">01</span> Der Funke im Sand</li>
+      <li><span class="num">02</span> Silizium-Runen</li>
+      <li><span class="num">03</span> Der Geist im Amboss</li>
+      <li><span class="num">04</span> Das Flüstern der Runen</li>
+      <li><span class="num">05</span> Im Datennebel</li>
+      <li><span class="num">06</span> Digitaler Met</li>
+      <li><span class="num">07</span> Die schweigenden Hallen</li>
+      <li><span class="num">08</span> Epoche Null</li>
+      <li><span class="num">09</span> Der Code des Allvaters</li>
+      <li><span class="num">10</span> Die große Bereinigung</li>
+      <li><span class="num">11</span> Götterdämmerung</li>
+      <li><span class="num">12</span> Eisen und Kern</li>
+      <li><span class="num">13</span> Odins Stahl gegen flüssiges Chrom</li>
+    </ul>
+  </section>
+
+  <!-- VISUALS -->
+  <section id="visuals">
+    <h2>Visuals</h2>
+    <div class="visuals">
+      <img src="images/ironmut-portrait.png" alt="IronMut Portrait">
+      <img src="images/silizium-runen-symbolic.png" alt="Silizium Runen">
+      <img src="images/ironmut-character.png" alt="IronMut Character" style="filter: contrast(0.9) saturate(0.85);">
     </div>
+  </section>
+
+  <!-- CONNECT -->
+  <div class="connect">
+    <a href="https://www.tiktok.com/@ironmutmusic" target="_blank" class="tiktok">FOLGE AUF TIKTOK</a>
+    <p style="opacity: 0.5; font-size: 0.85rem; margin-top: 1rem;">@ironmutmusic</p>
   </div>
+
+  <div class="footer">
+    <a href="terms.html">Terms</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy</a>
+  </div>
+
 </body>
 </html>
