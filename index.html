@@ -3,209 +3,179 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>IronMut • Viking-Country-Metal Band | Silizium-Runen</title>
-  <meta name="description" content="IronMut - Viking-Country-Metal aus der Schweiz. ᚱᚢᚾᛖᚾ erwachen. Gegen das Silizium. Musik, Videos und Runen-Erwachen.">
-  <meta name="keywords" content="IronMut, Viking Metal, Country Metal, Metal Band, Schweiz, Runen, Ragnar, Wotan, Ewige Wache">
-  <meta name="author" content="Iwan Kollegger">
-  <meta property="og:title" content="IronMut • Viking-Country-Metal">
-  <meta property="og:description" content="ᚱᚢᚾᛖᚾ erwachen. Gegen das Silizium. Viking-Country-Metal aus der Schweiz.">
-  <meta property="og:type" content="website">
+  <title>IronMut • Viking-Country-Metal | ᚱᚢᚾᛖᚾ erwachen</title>
+  <meta name="description" content="IronMut - Viking-Country-Metal aus der Schweiz. Die Runen erwachen. Gegen das Silizium. Hör jetzt 'Ewige Wache: Stahl und Eid'.">
+  <meta name="keywords" content="IronMut, Viking Metal, Country Metal, Viking-Country-Metal, Schweiz, Runen, Wotan, Ragnar, Ewige Wache, Stahl und Eid">
+  <meta property="og:title" content="IronMut • ᚱᚢᚾᛖᚾ erwachen. Gegen das Silizium">
+  <meta property="og:description" content="Viking-Country-Metal aus den Bergen. Debütalbum 'Ewige Wache: Stahl und Eid' jetzt überall verfügbar.">
+  <meta property="og:type" content="music.group">
   <meta property="og:url" content="https://ironmut.github.io/">
-  <meta property="og:image" content="https://ironmut.github.io/images/Ironmut-Carakter.png">
+  <meta property="og:image" content="https://ironmut.github.io/images/ironmut-roar-ridge.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="IronMut • Viking-Country-Metal">
-  <meta name="twitter:description" content="ᚱᚢᚾᛖᚾ erwachen. Gegen das Silizium.">
+  <meta name="twitter:description" content="Die Runen erwachen. Gegen das Silizium.">
   <link rel="canonical" href="https://ironmut.github.io/">
+  
+  <!-- Enhanced Schema.org -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "MusicGroup",
     "name": "IronMut",
-    "description": "Viking-Country-Metal Band aus der Schweiz",
+    "description": "Viking-Country-Metal Band aus der Schweiz. Die Runen erwachen gegen das Silizium.",
     "url": "https://ironmut.github.io/",
-    "genre": ["Viking Metal", "Country Metal", "Metal"],
+    "genre": ["Viking Metal", "Country Metal", "Heavy Metal"],
+    "image": "https://ironmut.github.io/images/ironmut-roar-ridge.png",
     "sameAs": [
       "https://www.tiktok.com/@ironmutmusic",
-      "https://github.com/Ironmut",
-      "https://www.instagram.com/ironmutmusic/"
+      "https://open.spotify.com/artist/IRONMUT",
+      "https://music.apple.com/artist/ironmut"
     ],
-    "image": "https://ironmut.github.io/images/Ironmut-Carakter.png"
+    "track": {
+      "@type": "MusicRecording",
+      "name": "Ewige Wache: Stahl und Eid",
+      "duration": "PT45M",
+      "inAlbum": {
+        "@type": "MusicAlbum",
+        "name": "Ewige Wache: Stahl und Eid",
+        "byArtist": "IronMut"
+      }
+    }
   }
   </script>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=IM+Fell+English+SC&display=swap');
-
     :root {
       --bg: #0a0a0a;
       --text: #c8b89a;
       --accent: #b38b5e;
       --steel: #3a3a3a;
     }
-
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
       background: var(--bg);
       color: var(--text);
       font-family: "IM Fell English SC", Georgia, serif;
-      line-height: 1.55;
+      line-height: 1.6;
     }
-
     .header {
       position: sticky;
       top: 0;
-      background: rgba(10,10,10,0.95);
-      border-bottom: 1px solid var(--steel);
+      background: rgba(10,10,10,0.98);
+      border-bottom: 2px solid var(--accent);
       padding: 1rem 2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
       z-index: 100;
     }
-
     .logo {
       font-family: "UnifrakturCook", serif;
-      font-size: 1.6rem;
-      letter-spacing: 0.15em;
+      font-size: 2rem;
+      letter-spacing: 0.2em;
       color: var(--accent);
     }
-
     .nav a {
       color: var(--text);
       text-decoration: none;
-      margin-left: 1.5rem;
-      font-size: 0.95rem;
-      opacity: 0.8;
+      margin-left: 2rem;
+      opacity: 0.85;
     }
-    .nav a:hover { opacity: 1; color: var(--accent); }
-
+    .nav a:hover { color: var(--accent); }
     .hero {
       min-height: 100vh;
+      background: linear-gradient(rgba(10,10,10,0.6), rgba(10,10,10,0.85)), url('images/ironmut-roar-ridge.png') center/cover no-repeat;
       display: flex;
       align-items: center;
-      padding: 4rem 2rem;
-      border-bottom: 1px solid var(--steel);
+      padding: 0 2rem;
+      position: relative;
     }
-
-    .hero-inner {
-      max-width: 1100px;
+    .hero-content {
+      max-width: 800px;
       margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1.1fr;
-      gap: 4rem;
-      align-items: center;
+      text-align: center;
     }
-
-    .hero-text h1 {
-      font-size: 4.2rem;
-      line-height: 0.9;
-      margin: 0 0 0.3rem;
-      letter-spacing: 0.05em;
-      color: #d4c4a3;
-    }
-
-    .rune-title {
-      font-size: 1.1rem;
-      letter-spacing: 0.6em;
+    .rune {
+      font-size: 1.4rem;
+      letter-spacing: 0.8em;
       color: var(--accent);
-      margin-bottom: 1.5rem;
-      font-family: "UnifrakturCook", serif;
+      margin-bottom: 1rem;
     }
-
+    h1 {
+      font-size: 4.5rem;
+      line-height: 0.95;
+      margin: 0 0 1rem;
+      color: #e8d9b8;
+      text-shadow: 0 0 30px rgba(179,139,94,0.6);
+    }
     .bio {
-      font-size: 1.35rem;
-      max-width: 32ch;
-      margin: 1.5rem 0 2rem;
+      font-size: 1.5rem;
+      max-width: 28ch;
+      margin: 0 auto 2rem;
+      opacity: 0.95;
     }
-
-    .hero img {
-      width: 100%;
-      max-width: 520px;
-      border: 1px solid var(--steel);
-      box-shadow: 0 0 0 8px #111;
+    .listen-btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #0a0a0a;
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+      letter-spacing: 0.15em;
+      text-decoration: none;
+      border: 2px solid var(--accent);
+      margin: 1rem;
     }
-
+    .listen-btn:hover {
+      background: transparent;
+      color: var(--accent);
+    }
     section {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 4rem 2rem;
+      padding: 5rem 2rem;
     }
-
     h2 {
-      font-size: 1.1rem;
-      letter-spacing: 0.3em;
+      font-size: 1.3rem;
+      letter-spacing: 0.4em;
       text-transform: uppercase;
       color: var(--accent);
-      margin-bottom: 1.8rem;
-      font-weight: normal;
+      text-align: center;
+      margin-bottom: 3rem;
     }
-
     .album-list {
       list-style: none;
       padding: 0;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 0.6rem 2rem;
-    }
-
-    .album-list li {
-      padding: 0.4rem 0;
-      border-bottom: 1px solid #222;
-      display: flex;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 1rem;
     }
-
-    .album-list .num {
-      color: var(--accent);
-      font-family: monospace;
-      width: 1.8em;
-      flex-shrink: 0;
+    .album-list li {
+      padding: 0.8rem 1.2rem;
+      background: rgba(58,58,58,0.4);
+      border-left: 4px solid var(--accent);
     }
-
-    .visuals {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .visuals img {
-      width: 100%;
-      border: 1px solid var(--steel);
-      display: block;
-    }
-
     .connect {
       text-align: center;
-      padding: 3rem 2rem;
-      border-top: 1px solid var(--steel);
+      padding: 4rem 2rem;
+      background: #111;
     }
-
-    .tiktok {
+    .tiktok-btn {
       display: inline-block;
-      font-size: 1.1rem;
-      padding: 0.8rem 2.2rem;
-      border: 1px solid var(--accent);
-      color: var(--accent);
+      background: #000;
+      color: #fff;
+      padding: 1rem 3rem;
+      font-size: 1.3rem;
+      border: 2px solid #ee1d52;
       text-decoration: none;
-      letter-spacing: 0.1em;
-      margin: 1rem 0;
+      margin: 1.5rem 0;
     }
-    .tiktok:hover {
-      background: var(--accent);
-      color: #0a0a0a;
-    }
-
     .footer {
       text-align: center;
       padding: 2rem;
-      font-size: 0.8rem;
-      opacity: 0.5;
+      font-size: 0.85rem;
+      opacity: 0.6;
       border-top: 1px solid #222;
-    }
-    .footer a {
-      color: inherit;
-      text-decoration: none;
     }
   </style>
 </head>
@@ -214,74 +184,52 @@
   <header class="header">
     <div class="logo">IRONMUT</div>
     <nav class="nav">
-      <a href="#album">Album</a>
-      <a href="#visuals">Visuals</a>
-      <a href="https://www.tiktok.com/@ironmutmusic" target="_blank">TikTok</a>
+      <a href="#album">ALBUM</a>
+      <a href="https://www.tiktok.com/@ironmutmusic" target="_blank">TIKTOK</a>
     </nav>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <div class="rune-title">ᚱᚢᚾᛖᚾ</div>
-        <h1>SILIZIUM<br>RUNEN</h1>
-        <p class="bio">ᚱᚢᚾᛖᚾ erwachen.<br>Gegen das Silizium.</p>
-        <p style="opacity:0.6; font-size:0.95rem;">Viking-Country-Metal</p>
-      </div>
-      <div>
-        <img src="images/ironmut-portrait.png" alt="IronMut" style="max-height: 520px; object-fit: cover;">
-      </div>
+    <div class="hero-content">
+      <div class="rune">ᚱᚢᚾᛖᚾ ᛖᚱᚹᚨᚲᚺᛖᚾ</div>
+      <h1>SILIZIUM<br>RUNEN</h1>
+      <p class="bio">Gegen das Silizium.<br>Stahl und Eid.</p>
+      <a href="https://open.spotify.com/artist/IRONMUT" target="_blank" class="listen-btn">JETZT HÖREN</a>
+      <a href="https://www.tiktok.com/@ironmutmusic" target="_blank" class="listen-btn">TIKTOK</a>
     </div>
   </section>
 
-  <!-- ÜBER -->
-  <section>
-    <h2>Das Projekt</h2>
-    <p style="max-width: 620px; font-size: 1.05rem;">
-      IronMut ist der Klang des Widerstands. Alte Runen gegen flüssiges Chrom. 
-      Stahl und Code. Ein Krieg, der in den schweigenden Hallen der Maschinen geführt wird.
+  <section id="album">
+    <h2>Ewige Wache: Stahl und Eid</h2>
+    <ul class="album-list">
+      <li>01 Der Funke im Sand</li>
+      <li>02 Silizium-Runen</li>
+      <li>03 Der Geist im Amboss</li>
+      <li>04 Das Flüstern der Runen</li>
+      <li>05 Im Datennebel</li>
+      <li>06 Digitaler Met</li>
+      <li>07 Die schweigenden Hallen</li>
+      <li>08 Epoche Null</li>
+      <li>09 Der Code des Allvaters</li>
+      <li>10 Die große Bereinigung</li>
+      <li>11 Götterdämmerung</li>
+      <li>12 Eisen und Kern</li>
+      <li>13 Odins Stahl gegen flüssiges Chrom</li>
+    </ul>
+    <p style="text-align:center; margin-top:3rem; opacity:0.7;">
+      Das Debütalbum ist auf Spotify, Apple Music, Deezer, Amazon Music und allen großen Plattformen verfügbar.
     </p>
   </section>
 
-  <!-- ALBUM -->
-  <section id="album">
-    <h2>Silizium-Runen</h2>
-    <ul class="album-list">
-      <li><span class="num">01</span> Der Funke im Sand</li>
-      <li><span class="num">02</span> Silizium-Runen</li>
-      <li><span class="num">03</span> Der Geist im Amboss</li>
-      <li><span class="num">04</span> Das Flüstern der Runen</li>
-      <li><span class="num">05</span> Im Datennebel</li>
-      <li><span class="num">06</span> Digitaler Met</li>
-      <li><span class="num">07</span> Die schweigenden Hallen</li>
-      <li><span class="num">08</span> Epoche Null</li>
-      <li><span class="num">09</span> Der Code des Allvaters</li>
-      <li><span class="num">10</span> Die große Bereinigung</li>
-      <li><span class="num">11</span> Götterdämmerung</li>
-      <li><span class="num">12</span> Eisen und Kern</li>
-      <li><span class="num">13</span> Odins Stahl gegen flüssiges Chrom</li>
-    </ul>
-  </section>
-
-  <!-- VISUALS -->
-  <section id="visuals">
-    <h2>Visuals</h2>
-    <div class="visuals">
-      <img src="images/ironmut-portrait.png" alt="IronMut Portrait">
-      <img src="images/silizium-runen-symbolic.png" alt="Silizium Runen">
-      <img src="images/ironmut-character.png" alt="IronMut Character" style="filter: contrast(0.9) saturate(0.85);">
-    </div>
-  </section>
-
-  <!-- CONNECT -->
   <div class="connect">
-    <a href="https://www.tiktok.com/@ironmutmusic" target="_blank" class="tiktok">FOLGE AUF TIKTOK</a>
-    <p style="opacity: 0.5; font-size: 0.85rem; margin-top: 1rem;">@ironmutmusic</p>
+    <h2>Die Runen erwachen täglich um 20:00 Uhr</h2>
+    <a href="https://www.tiktok.com/@ironmutmusic" target="_blank" class="tiktok-btn">FOLGE @ironmutmusic AUF TIKTOK</a>
+    <p style="margin-top:2rem; opacity:0.6;">Kurze mystische Clips • Viking-Country-Metal • Face-Lock respektiert</p>
   </div>
 
   <div class="footer">
-    <a href="terms.html">Terms</a> &nbsp;·&nbsp; <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a> · <a href="privacy.html">Privacy</a><br>
+    © IronMut • Iwan Kollegger • Brunnadern, Schweiz
   </div>
 
 </body>
