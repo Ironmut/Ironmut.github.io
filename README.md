@@ -12,7 +12,7 @@
 ## 🎸 Über IronMut
 
 Viking-Country-Metal Band aus der Schweiz (9125 Brunnadern).
-Neue Single: [Stein spricht Stahl](https://open.spotify.com/album/68CWFoUcSsFgFm815Cc1FZ) (23.08.2026)
+Neue Single: [Shieldwall](https://open.spotify.com/album/2IHK9N0Rx5wbecg1U6AJd7) (31.08.2026)
 Album: "Ewige Wache: Stahl und Eid" / Store-Album *Silizium-Runen*
 
 ## 🔗 Backlinks
