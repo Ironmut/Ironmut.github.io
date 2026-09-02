@@ -1,20 +1,24 @@
-# IronMut • Viking-Country-Metal
+# Ironmut • Viking-Country-Metal
 
-ᚱᚢᚾᛖᚾ erwachen. Gegen das Silizium.
+Landing Page: https://ironmut.github.io/
 
-## 🎵 Musik & Links
+## Links
 
 - **Website**: https://ironmut.github.io/
+- **Spotify**: https://open.spotify.com/artist/6lzGpn1us5Pq6tqXU6sngk
+- **Apple Music**: https://music.apple.com/artist/ironmut/6789986383
+- **YouTube**: https://www.youtube.com/@Ironmutmusic
 - **TikTok**: [@ironmutmusic](https://www.tiktok.com/@ironmutmusic)
 - **Instagram**: [@ironmutmusic](https://www.instagram.com/ironmutmusic/)
-- **GitHub**: [Ironmut](https://github.com/Ironmut)
+- **Shieldwall (Single)**: https://open.spotify.com/album/2IHK9N0Rx5wbecg1U6AJd7
+- **Alle Stores (Shieldwall)**: https://distrokid.com/hyperfollow/ironmut/shieldwall
 
-## 🎸 Über IronMut
+## Über Ironmut
 
-Viking-Country-Metal Band aus der Schweiz (9125 Brunnadern).
-Neue Single: [Shieldwall](https://open.spotify.com/album/2IHK9N0Rx5wbecg1U6AJd7) (31.08.2026)
-Album: "Ewige Wache: Stahl und Eid" / Store-Album *Silizium-Runen*
+Viking-Country-Metal aus der Schweiz (9125 Brunnadern).
+Neue Single: Shieldwall (31.08.2026).
+Album im Store: *Silizium-Runen* (13 Tracks).
 
-## 🔗 Backlinks
+## Backlinks
 
-Diese Seite dient als zentrale Landing Page für IronMut im Internet.
+Diese Seite ist die zentrale Landing Page für Ironmut.
