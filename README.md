@@ -15,7 +15,7 @@ Ironmut ist ein reines KI-Musikprojekt, erdacht von Iwan Kollegger (Architekt). 
 ## Releases
 
 - **Shieldwall** (Single, 31.08.2026): https://distrokid.com/hyperfollow/ironmut/shieldwall
-- **Boom** (Single, erscheint 17.10.2026): https://distrokid.com/hyperfollow/ironmut/boom
+- **Boom** (Album, erscheint 17.10.2026): https://distrokid.com/hyperfollow/ironmut/boom
 - **Silizium-Runen** (Album, 13 Tracks)
 
 Hinweis: `tiktok*.txt` ist die TikTok-Domain-Verifizierung und muss bleiben.
