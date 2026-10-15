@@ -16,8 +16,8 @@
   <meta property="og:title" content="Ironmut • Neues Album «Boom» am 17. Oktober">
   <meta property="og:description" content="KI-Musikprojekt · Viking-Country-Metal. Shieldwall: Steh still und starr. Boom: ab 17.10.2026.">
   <meta property="og:image" content="https://ironmut.github.io/images/og-boom.jpg">
-  <meta property="og:image:width" content="800">
-  <meta property="og:image:height" content="800">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="1200">
   <meta property="og:image:alt" content="Albumcover: Ironmut — Boom">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Ironmut • Neues Album «Boom»">
@@ -151,7 +151,7 @@
     .tl li::before{content:counter(t,decimal-leading-zero);color:var(--ember);font:700 .9rem/1.6 var(--display);min-width:1.6rem}
 
     .releases{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1rem;list-style:none;padding:0;margin:0}
-    .rel{padding:1rem;display:flex;flex-direction:column;gap:.25rem;min-height:170px}
+    .rel{padding:.75rem;display:flex;flex-direction:column;gap:.25rem;min-height:170px}
     .rel .k{font:600 .68rem/1 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--ember)}
     .rel h3{font:900 1.6rem/1 var(--display);text-transform:uppercase;margin:.4rem 0 auto}
     .rel .meta{color:var(--muted);font-size:.8rem}
@@ -159,6 +159,8 @@
     .rel .l a{color:var(--bone);text-underline-offset:3px;text-decoration-color:#ffffff40}
     .rel .l a:hover{color:var(--ember2)}
     .rel.new{outline:1px solid var(--ember)}
+    .rel .art{width:100%;aspect-ratio:1;object-fit:cover;margin-bottom:.6rem;box-shadow:0 10px 30px #000}
+    .rel .noart{display:grid;place-items:center;background:repeating-linear-gradient(135deg,#1b1e21 0 6px,#15181a 6px 12px);font:900 1.3rem/1 var(--display);letter-spacing:.2em;color:#3d4348}
 
     .links{list-style:none;padding:0;margin:0;border-top:1px solid var(--line)}
     .links a{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 0;border-bottom:1px solid var(--line);text-decoration:none;
@@ -215,7 +217,7 @@
 
     <section class="boom steel" id="boom" aria-labelledby="boom-title">
       <div class="wrap boom-grid">
-        <img class="boom-cover" src="images/boom-440.webp" srcset="images/boom-440.webp 440w, images/boom-800.webp 800w" sizes="(min-width:720px) 440px, 100vw" width="800" height="800" alt="Albumcover: Ironmut — Boom" loading="lazy">
+        <img class="boom-cover" src="images/boom-400.webp" srcset="images/boom-400.webp 400w, images/boom-800.webp 800w" sizes="(min-width:720px) 440px, 100vw" width="800" height="800" alt="Albumcover: Ironmut — Boom" loading="lazy">
         <div>
           <p class="eyebrow">Neues Album</p>
           <h2 id="boom-title" class="display">Boom</h2>
@@ -255,7 +257,7 @@
         <div class="sec-head"><h2 id="album-title" class="display">Silizium-Runen</h2><p class="eyebrow">Album · 13 Tracks</p></div>
         <div class="album">
           <div>
-            <img src="images/silizium-runen-600.webp" width="452" height="600" alt="Artwork: Silizium-Runen — Ironmut" loading="lazy">
+            <img src="images/silizium-runen-400.webp" srcset="images/silizium-runen-400.webp 400w, images/silizium-runen-800.webp 800w" sizes="(min-width:720px) 340px, 100vw" width="800" height="800" alt="Cover: Silizium-Runen — Ironmut" loading="lazy">
             <div class="btns" style="margin-top:1.2rem">
               <a class="btn primary" href="https://open.spotify.com/album/73jLWrJg4LcWn1jVtQU2Uf" target="_blank" rel="noopener">Spotify</a>
               <a class="btn" href="https://music.apple.com/ch/album/silizium-runen/6799336812" target="_blank" rel="noopener">Apple Music</a>
@@ -275,19 +277,19 @@
       <div class="wrap">
         <div class="sec-head"><h2 id="disco-title" class="display">Diskografie</h2><p class="eyebrow">Alle Releases</p></div>
         <ul class="releases">
-          <li class="rel steel new"><span class="k">Album · neu</span><h3>Boom</h3><span class="meta">ab 17.10.2026</span>
+          <li class="rel steel new"><img class="art" src="images/boom-400.webp" width="400" height="400" alt="Cover: Boom" loading="lazy" decoding="async"><span class="k">Album · neu</span><h3>Boom</h3><span class="meta">ab 17.10.2026</span>
             <span class="l"><a href="https://distrokid.com/hyperfollow/ironmut/boom" target="_blank" rel="noopener">Vormerken</a></span></li>
-          <li class="rel steel"><span class="k">Single</span><h3>Shieldwall</h3><span class="meta">31.08.2026</span>
+          <li class="rel steel"><img class="art" src="images/shieldwall-400.webp" width="400" height="400" alt="Cover: Shieldwall" loading="lazy" decoding="async"><span class="k">Single</span><h3>Shieldwall</h3><span class="meta">31.08.2026</span>
             <span class="l"><a href="https://open.spotify.com/album/2IHK9N0Rx5wbecg1U6AJd7" target="_blank" rel="noopener">Spotify</a><a href="https://music.apple.com/ch/album/shieldwall-single/6806990627" target="_blank" rel="noopener">Apple</a><a href="https://distrokid.com/hyperfollow/ironmut/shieldwall" target="_blank" rel="noopener">Alle Stores</a></span></li>
-          <li class="rel steel"><span class="k">Single</span><h3>Stein spricht Stahl</h3><span class="meta">&nbsp;</span>
+          <li class="rel steel"><img class="art" src="images/stein-spricht-stahl-400.webp" width="400" height="400" alt="Cover: Stein spricht Stahl" loading="lazy" decoding="async"><span class="k">Single</span><h3>Stein spricht Stahl</h3><span class="meta">&nbsp;</span>
             <span class="l"><a href="https://open.spotify.com/album/68CWFoUcSsFgFm815Cc1FZ" target="_blank" rel="noopener">Spotify</a><a href="https://music.apple.com/ch/album/stein-spricht-stahl-single/6804498264" target="_blank" rel="noopener">Apple</a><a href="https://youtu.be/Vj17-7Ai4jI" target="_blank" rel="noopener">YouTube</a></span></li>
-          <li class="rel steel"><span class="k">Album</span><h3>Silizium-Runen</h3><span class="meta">13 Tracks</span>
+          <li class="rel steel"><img class="art" src="images/silizium-runen-400.webp" width="400" height="400" alt="Cover: Silizium-Runen" loading="lazy" decoding="async"><span class="k">Album</span><h3>Silizium-Runen</h3><span class="meta">13 Tracks</span>
             <span class="l"><a href="https://open.spotify.com/album/73jLWrJg4LcWn1jVtQU2Uf" target="_blank" rel="noopener">Spotify</a><a href="https://music.apple.com/ch/album/silizium-runen/6799336812" target="_blank" rel="noopener">Apple</a></span></li>
-          <li class="rel steel"><span class="k">Album</span><h3>Ursprung</h3><span class="meta">9 Tracks</span>
+          <li class="rel steel"><img class="art" src="images/ursprung-400.webp" width="400" height="400" alt="Cover: Ursprung" loading="lazy" decoding="async"><span class="k">Album</span><h3>Ursprung</h3><span class="meta">9 Tracks</span>
             <span class="l"><a href="https://open.spotify.com/album/7ph3Whg0uxmTmnwVGEXnWl" target="_blank" rel="noopener">Spotify</a><a href="https://music.apple.com/ch/album/ursprung/6790015676" target="_blank" rel="noopener">Apple</a></span></li>
-          <li class="rel steel"><span class="k">Single</span><h3>1.August</h3><span class="meta">&nbsp;</span>
+          <li class="rel steel"><img class="art" src="images/1-august-400.webp" width="400" height="400" alt="Cover: 1.August" loading="lazy" decoding="async"><span class="k">Single</span><h3>1.August</h3><span class="meta">&nbsp;</span>
             <span class="l"><a href="https://open.spotify.com/album/2vH7BhsX1J650Emi3fmHus" target="_blank" rel="noopener">Spotify</a><a href="https://music.apple.com/ch/album/1-august-single/6790929126" target="_blank" rel="noopener">Apple</a></span></li>
-          <li class="rel steel"><span class="k">Comedy</span><h3>Die heitere Schmiede</h3><span class="meta">12 Tracks</span>
+          <li class="rel steel"><img class="art" src="images/die-heitere-schmiede-400.webp" width="400" height="400" alt="Cover: Die heitere Schmiede" loading="lazy" decoding="async"><span class="k">Comedy</span><h3>Die heitere Schmiede</h3><span class="meta">12 Tracks</span>
             <span class="l"><a href="https://open.spotify.com/album/59GQ4vHEo0ZXVTq5rDyqjV" target="_blank" rel="noopener">Spotify</a><a href="https://music.apple.com/ch/album/die-heitere-schmiede/6792467823" target="_blank" rel="noopener">Apple</a></span></li>
         </ul>
       </div>
