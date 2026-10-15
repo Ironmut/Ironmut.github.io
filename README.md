@@ -1,24 +1,21 @@
-# Ironmut • Viking-Country-Metal
+# Ironmut • KI-Musikprojekt · Viking-Country-Metal
 
 Landing Page: https://ironmut.github.io/
 
+Ironmut ist ein reines KI-Musikprojekt, erdacht von Iwan Kollegger (Architekt). Keine reale Band.
+
 ## Links
 
-- **Website**: https://ironmut.github.io/
 - **Spotify**: https://open.spotify.com/artist/6lzGpn1us5Pq6tqXU6sngk
 - **Apple Music**: https://music.apple.com/artist/ironmut/6789986383
 - **YouTube**: https://www.youtube.com/@Ironmutmusic
 - **TikTok**: [@ironmutmusic](https://www.tiktok.com/@ironmutmusic)
 - **Instagram**: [@ironmutmusic](https://www.instagram.com/ironmutmusic/)
-- **Shieldwall (Single)**: https://open.spotify.com/album/2IHK9N0Rx5wbecg1U6AJd7
-- **Alle Stores (Shieldwall)**: https://distrokid.com/hyperfollow/ironmut/shieldwall
 
-## Über Ironmut
+## Releases
 
-Viking-Country-Metal aus der Schweiz (9125 Brunnadern).
-Neue Single: Shieldwall (31.08.2026).
-Album im Store: *Silizium-Runen* (13 Tracks).
+- **Shieldwall** (Single, 31.08.2026): https://distrokid.com/hyperfollow/ironmut/shieldwall
+- **Boom** (Single, erscheint 17.10.2026): https://distrokid.com/hyperfollow/ironmut/boom
+- **Silizium-Runen** (Album, 13 Tracks)
 
-## Backlinks
-
-Diese Seite ist die zentrale Landing Page für Ironmut.
+Hinweis: `tiktok*.txt` ist die TikTok-Domain-Verifizierung und muss bleiben.
